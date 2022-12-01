@@ -1,0 +1,484 @@
+<!--
+  Template Name   : Wigui - News | The Multi-Purpose HTML5 Blog Template
+  Author          : Wiguibillion - Desor Guishny
+  ThemeForest     : https://themeforest.net/user/desorgui
+  Contact         : wiguibillion@gmail.com
+  Created         : June 5th 2021
+  License         : You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- :: Head -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Wiguibillion - Desor Guishny" />
+	<meta name="description" content="Here is a precise description of my awesome webpage." />
+	<meta name="theme-color" content="#9b5de5" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="keywords" content="wigui, education, beauty, blog, personal, news, creative, clean, technology, multipurpose, product, product launch, responsive, software, startup" />
+		<link rel="icon" type="image/png" href="img/logo2.png" />
+
+		<!--:: CSS Files -->
+		<link rel="stylesheet" href="./assets/css/lib/swiper.min.css" />
+		<link rel="stylesheet" href="fontawesome/css/all.css" type="text/css" />
+		<link rel="stylesheet" href="./assets/css/lib/bootstrap.css" />
+		<link rel="stylesheet" href="./assets/css/lib/font-awesome.min.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/theme/style.css"
+			type="text/css"
+		/>
+		<link rel="stylesheet" href="./assets/css/theme/category.css" />
+		<link rel="stylesheet" href="./assets/css/theme/dark.css" type="text/css" />
+		<title>Category</title>
+	</head>
+	<body>
+		<div class="topHeader">
+			<!-- :: Navbar -->
+			<nav class="th-nav-st1">
+				<div class="container">
+					<!-- nav content -->
+					<div
+						class="
+							nav-content
+							d-flex
+							align-items-center
+							justify-content-between
+						"
+					>
+						<!-- brand -->
+						<a href="index.html" class="brand">
+							<img
+								src="img/logo2.png"
+								class="img-fluid"
+								alt="logo"
+								loading="lazy"
+								decoding="async"
+							/>
+							Wigui
+						</a>
+
+						<!-- Search -->
+						<div class="search_container" id="search_containerId">
+							<div class="searchBox">
+								<input type="checkbox" class="searchCheck" id="searchCheck" />
+								<input
+									class="searchInput"
+									type="text"
+									name="search"
+									placeholder="Search"
+								/>
+								<button class="searchButton">
+									<i class="fa fa-search"></i>
+								</button>
+							</div>
+						</div>
+						<!-- togle dark/light-->
+						<a href="javascript:void(0);" class="sun">
+							<i class="fas fa-sun"></i>
+						</a>
+						<a href="javascript:void(0);" class="moon">
+							<i class="fas fa-moon"></i>
+						</a>
+						<div class="toggle">
+							<input type="checkbox" class="checkbox" id="chk" />
+							<div class="label">
+								<i class="fas fa-moon"></i>
+								<i class="fas fa-sun"></i>
+								<div class="ball" onClick="too()"></div>
+							</div>
+						</div>
+						<!-- links -->
+
+						<ul
+							class="
+								nav-links
+								list-unstyled
+								d-lg-flex
+								align-items-center
+								justify-content-end
+								mb-0
+							"
+						>
+							<!-- nav item has dropdown -->
+							<li class="th-nav-item position-relative">
+								<a
+									href="index.html"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>home</a
+								>
+								
+							</li>
+
+							<!-- nav item has dropdown -->
+							<li class="th-nav-item has-dropdown position-relative">
+								<a
+									href="#"
+									onclick="return false;"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>pages</a
+								>
+								<!-- dropdown list -->
+								<ul class="th-dropdown-list list-unstyled mb-0">
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="author.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Author</a
+										>
+									</li>
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="category.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Category</a
+										>
+									</li>
+									
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="single.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Single</a
+										>
+									</li>
+								</ul>
+							</li>
+
+							<!-- nav item -->
+							<li class="th-nav-item position-relative">
+								<a
+									href="#"
+									onclick="return false;"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>About Us</a
+								>
+							</li>
+						</ul>
+
+						<!-- toggler Menu-->
+						<button class="nav-toggler d-lg-none d-block" id="nav_toggler">
+							<span class="d-block w-100"></span>
+							<span class="d-block w-100"></span>
+							<span class="d-block w-100"></span>
+						</button>
+					</div>
+				</div>
+			</nav>
+			<!--Search max width 991px-->
+			<div class="search">
+				<input
+					class="searchInput2"
+					type="text"
+					name="Search2"
+					placeholder="Search"
+				/>
+				<button class="searchButton2">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+		</div>
+		<div class="master_container">
+		<!--post-->
+		<h1 class="category_tag">#Category</h1>
+		<div class="container">
+			<div class="container_card">
+				<!--Blog Card begin-->
+				<div class="blog-card spring-fever">
+					<img
+						loading="lazy"
+						decoding="async"
+						src="news_img/police.jpg"
+						alt="illustration_image"
+						class="card_image"
+					/>
+					<div class="title-content">
+						<h3>
+							<a href="single.html"
+								>Twoo man dead on a drug deal. The police can't do anything</a
+							>
+						</h3>
+						<div class="card_category">
+							<a href="category.html">News_category</a>
+						</div>
+					</div>
+					<div class="card-info">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim...
+						<a href="single.html">Read More</a>
+					</div>
+					<div class="utility-info">
+						<ul class="utility-list">
+							<li><span class="far fa-thumbs-up"></span><a href="#"> 2</a></li>
+							<li><span class="far fa-comment"></span><a href="#"> 12</a></li>
+							<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+						</ul>
+					</div>
+					<div class="gradient-overlay"></div>
+					<div class="color-overlay"></div>
+				</div>
+				<!--Blog Card End-->
+
+				<!--Blog Card begin-->
+				<div class="blog-card spring-fever">
+					<img
+						loading="lazy"
+						decoding="async"
+						src="news_img/politic(6).jpg"
+						alt="illustration_image"
+						class="card_image"
+					/>
+					<div class="title-content">
+						<h3>
+							<a href="#"
+								>The House of representatives has just adopted a resolution on
+								health crises.</a
+							>
+						</h3>
+						<div class="card_category">
+							<a href="category.html">News_category</a>
+						</div>
+					</div>
+					<div class="card-info">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim...
+						<a href="single.html">Read More</a>
+					</div>
+					<div class="utility-info">
+						<ul class="utility-list">
+							<li><span class="far fa-thumbs-up"></span><a href="#"> 2</a></li>
+							<li><span class="far fa-comment"></span><a href="#"> 12</a></li>
+							<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+						</ul>
+					</div>
+					<div class="gradient-overlay"></div>
+					<div class="color-overlay"></div>
+				</div>
+				<!--Blog Card End-->
+
+				<!--Blog Card begin-->
+				<div class="blog-card spring-fever">
+					<img
+						loading="lazy"
+						decoding="async"
+						src="news_img/shotgun.jpg"
+						alt="illustration_image"
+						class="card_image"
+					/>
+					<div class="title-content">
+						<h3>
+							<a href="#"
+								>assasinnat of a development science student from a very
+								prestigious university</a
+							>
+						</h3>
+						<div class="card_category">
+							<a href="category.html">News_category</a>
+						</div>
+					</div>
+					<div class="card-info">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim...
+						<a href="single.html">Read More</a>
+					</div>
+					<div class="utility-info">
+						<ul class="utility-list">
+							<li><span class="far fa-thumbs-up"></span><a href="#"> 2</a></li>
+							<li><span class="far fa-comment"></span><a href="#"> 12</a></li>
+							<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+						</ul>
+					</div>
+					<div class="gradient-overlay"></div>
+					<div class="color-overlay"></div>
+				</div>
+				<!--Blog Card End-->
+
+				<!--Blog Card begin-->
+				<div class="blog-card spring-fever">
+					<img
+						loading="lazy"
+						decoding="async"
+						src="news_img/coronavaccin.jpg"
+						alt="illustration_image"
+						class="card_image"
+					/>
+					<div class="title-content">
+						<h3>
+							<a href="#"
+								>5,000,000 people vaccinated against the Corona virus in the
+								world</a
+							>
+						</h3>
+						<div class="card_category">
+							<a href="category.html">News_category</a>
+						</div>
+					</div>
+					<div class="card-info">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim...
+						<a href="single.html">Read More</a>
+					</div>
+					<div class="utility-info">
+						<ul class="utility-list">
+							<li><span class="far fa-thumbs-up"></span><a href="#"> 2</a></li>
+							<li><span class="far fa-comment"></span><a href="#"> 12</a></li>
+							<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+						</ul>
+					</div>
+					<div class="gradient-overlay"></div>
+					<div class="color-overlay"></div>
+				</div>
+				<!--Blog Card End-->
+
+				<!--Blog Card begin-->
+				<div class="blog-card spring-fever">
+					<img
+						loading="lazy"
+						decoding="async"
+						src="news_img/photo/explo.jpg"
+						alt="illustration_image"
+						class="card_image"
+					/>
+					<div class="title-content">
+						<h3>
+							<a href="#"
+								>There as an explosion in a European hospital because of an
+								oxygen cylinder</a
+							>
+						</h3>
+						<div class="card_category">
+							<a href="category.html">News_category</a>
+						</div>
+					</div>
+					<div class="card-info">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim...
+						<a href="single.html">Read More</a>
+					</div>
+					<div class="utility-info">
+						<ul class="utility-list">
+							<li><span class="far fa-thumbs-up"></span><a href="#"> 2</a></li>
+							<li><span class="far fa-comment"></span><a href="#"> 12</a></li>
+							<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+						</ul>
+					</div>
+					<div class="gradient-overlay"></div>
+					<div class="color-overlay"></div>
+				</div>
+				<!--Blog Card End-->
+
+				<!--Blog Card begin-->
+				<div class="blog-card spring-fever">
+					<img
+						loading="lazy"
+						decoding="async"
+						src="news_img/police.jpg"
+						alt="illustration_image"
+						class="card_image"
+					/>
+					<div class="title-content">
+						<h3>
+							<a href="single.html"
+								>Twoo man dead on a drug deal. The police can't do anything</a
+							>
+						</h3>
+						<div class="card_category">
+							<a href="category.html">News_category</a>
+						</div>
+					</div>
+					<div class="card-info">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim...
+						<a href="single.html">Read More</a>
+					</div>
+					<div class="utility-info">
+						<ul class="utility-list">
+							<li><span class="far fa-thumbs-up"></span><a href="#"> 2</a></li>
+							<li><span class="far fa-comment"></span><a href="#"> 12</a></li>
+							<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+						</ul>
+					</div>
+					<div class="gradient-overlay"></div>
+					<div class="color-overlay"></div>
+				</div>
+				<!--Blog Card End-->
+			</div>
+		</div>
+	</div>
+		<!--Pagination section-->
+		<ul class="pagination">
+			<li><a href="#" class="prev">&lt; Prev</a></li>
+			<li class="pageNumber active"><a href="#">1</a></li>
+			<li class="pageNumber"><a href="#">2</a></li>
+			<li class="pageNumber"><a href="#">3</a></li>
+			<li><a href="#" class="next">Next ></a></li>
+		</ul>
+		<!--Footer Section-->
+		<footer>
+			<div class="footer">
+				<a href="facebook.com"><i class="fa fa-facebook-f"></i></a>
+				<a href="twitter.com"><i class="fab fa-twitter "></i></a>
+				<a href="google.com"><i class="fab fa-google-plus-g"></i></a>
+				<a href="gmail.com"><i class="fa fa-envelope"></i></a>
+				<a href="contact.html"><i class="fa fa-phone"></i></a>
+				<p>
+					© Wiguiblog 2021. All Rights Reserved || Designed By:
+					<a href="themeforest.net/desorgui">Wigui</a>
+				</p>
+			</div>
+		</footer>
+		<!--End Footer Section-->
+
+		<!-- :: Scripts -->
+		<script src="./assets/js/lib/jquery-3.3.1.min.js"></script>
+		<script src="./assets/js/lib/bootstrap.min.js"></script>
+		<script src="./assets/js/lib/fontAwesome.js"></script>
+		<script src="./assets/js/theme/theme.js"></script>
+	</body>
+</html>

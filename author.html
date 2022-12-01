@@ -1,0 +1,868 @@
+<!--
+  Template Name   : Wigui - News | The Multi-Purpose HTML5 Blog Template
+  Author          : Wiguibillion - Desor Guishny
+  ThemeForest     : https://themeforest.net/user/desorgui
+  Contact         : wiguibillion@gmail.com
+  Created         : June 5th 2021
+  License         : You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- :: Head -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Wiguibillion - Desor Guishny" />
+	<meta name="description" content="Here is a precise description of my awesome webpage." />
+	<meta name="theme-color" content="#9b5de5" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="keywords" content="wigui, education, beauty, blog, personal, news, creative, clean, technology, multipurpose, product, product launch, responsive, software, startup" />
+		<title>Author</title>
+		<link rel="icon" type="image/png" href="img/logo2.png" />
+		<!--:: CSS Files -->
+		<link rel="stylesheet" href="./assets/css/lib/swiper.min.css" />
+		<link rel="stylesheet" href="fontawesome/css/all.css" type="text/css" />
+		<link rel="stylesheet" href="./assets/css/lib/bootstrap.css" />
+		<link rel="stylesheet" href="./assets/css/lib/font-awesome.min.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/theme/style.css"
+			type="text/css"
+		/>
+		<link rel="stylesheet" href="./assets/css/theme/author.css" />
+		<link rel="stylesheet" href="./assets/css/theme/dark.css" type="text/css" />
+	</head>
+	<body>
+		<div class="topHeader">
+			<!-- :: Navbar -->
+			<nav class="th-nav-st1">
+				<div class="container">
+					<!-- nav content -->
+					<div
+						class="
+							nav-content
+							d-flex
+							align-items-center
+							justify-content-between
+						"
+					>
+						<!-- brand -->
+						<a href="index.html" class="brand">
+							<img
+								src="img/logo2.png"
+								class="img-fluid"
+								alt="logo"
+								loading="lazy"
+								decoding="async"
+							/>
+							Wigui
+						</a>
+
+						<!-- Search -->
+						<div class="search_container" id="search_containerId">
+							<div class="searchBox">
+								<input type="checkbox" class="searchCheck" id="searchCheck" />
+								<input
+									class="searchInput"
+									type="text"
+									name="search"
+									placeholder="Search"
+								/>
+								<button class="searchButton">
+									<i class="fa fa-search"></i>
+								</button>
+							</div>
+						</div>
+						<!-- togle dark/light-->
+						<a href="javascript:void(0);" class="sun">
+							<i class="fas fa-sun"></i>
+						</a>
+						<a href="javascript:void(0);" class="moon">
+							<i class="fas fa-moon"></i>
+						</a>
+						<div class="toggle">
+							<input type="checkbox" class="checkbox" id="chk" />
+							<div class="label">
+								<i class="fas fa-moon"></i>
+								<i class="fas fa-sun"></i>
+								<div class="ball" onClick="too()"></div>
+							</div>
+						</div>
+						<!-- links -->
+
+						<ul
+							class="
+								nav-links
+								list-unstyled
+								d-lg-flex
+								align-items-center
+								justify-content-end
+								mb-0
+							"
+						>
+							<!-- nav item has dropdown -->
+							<li class="th-nav-item position-relative">
+								<a
+									href="index.html"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>home</a
+								>
+								
+							</li>
+
+							<!-- nav item has dropdown -->
+							<li class="th-nav-item has-dropdown position-relative">
+								<a
+									href="#"
+									onclick="return false;"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>pages</a
+								>
+								<!-- dropdown list -->
+								<ul class="th-dropdown-list list-unstyled mb-0">
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="author.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Author</a
+										>
+									</li>
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="category.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Category</a
+										>
+									</li>
+									
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="single.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Single</a
+										>
+									</li>
+								</ul>
+							</li>
+
+							<!-- nav item -->
+							<li class="th-nav-item position-relative">
+								<a
+									href="#"
+									onclick="return false;"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>About Us</a
+								>
+							</li>
+						</ul>
+
+						<!-- toggler Menu-->
+						<button class="nav-toggler d-lg-none d-block" id="nav_toggler">
+							<span class="d-block w-100"></span>
+							<span class="d-block w-100"></span>
+							<span class="d-block w-100"></span>
+						</button>
+					</div>
+				</div>
+			</nav>
+			<!--Search max width 991px-->
+			<div class="search">
+				<input
+					class="searchInput2"
+					type="text"
+					name="Search2"
+					placeholder="Search"
+				/>
+				<button class="searchButton2">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+		</div>
+		<div class="contentfull">
+			<!--Author Profile Header-->
+			<div class="profile-header">
+				<!--Profile Image-->
+				<div class="profile-img">
+					<img
+						src="img/Author.jpg"
+						width="200"
+						loading="lazy"
+						decoding="async"
+						alt="Profile Image"
+					/>
+				</div>
+
+				<!--Author Profil Information-->
+				<div class="profile-navig-info">
+					<h3 class="user-name">Wigui Doe</h3>
+					<div class="address">
+						<p id="state" class="state">New York,</p>
+						<span id="country" class="country">USA.</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-bd">
+				<!--Left Side Information-->
+				<div class="left-side">
+					<div class="profile-side">
+						<p class="mobile-no"><i class="fa fa-phone"></i> +49354xxxxx080</p>
+						<p class="user-mail">
+							<i class="fa fa-envelope"></i> wiguibillion01@gmail.com
+						</p>
+						<div class="user-bio">
+							<h3>Bio</h3>
+							<p class="bio">
+								Lorem ipsum dolor sit amet, hello how consectetur adipisicing
+								elit. Sint consectetur provident magni yohoho consequuntur,
+								voluptatibus ghdfff exercitationem at quis similique. Optio,
+								amet!
+							</p>
+						</div>
+						<div class="profile-btn">
+							<button class="chatbtn" id="chatBtn">
+								<i class="fa fa-comment"></i> Chat
+							</button>
+							<button class="followbtn" id="Follow-author">
+								<i class="fa fa-plus"></i> Follow
+							</button>
+						</div>
+						<div class="user-rating">
+							<h3 class="rating">4.5</h3>
+							<div class="rate">
+								<div class="star-outer">
+									<div class="star-inner">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</div>
+								</div>
+								<span class="no-of-user-rate"
+									><span>715</span>&nbsp;&nbsp;reviews</span
+								>
+							</div>
+						</div>
+						<h3>Skills</h3>
+						<ul>
+							<li>Html</li>
+							<li>css</li>
+							<li>wordpress</li>
+							<li>Bootstrap</li>
+							<li>Javascript</li>
+							<li>wordpress</li>
+							<li>Bootstrap</li>
+							<li>Gatsby</li>
+						</ul>
+					</div>
+				</div>
+				<div class="right-side">
+					<!--Author Navigation-->
+					<div class="navig">
+						<ul>
+							<li><a href="#posts" class="user-post">Posts</a></li>
+							<li><a href="#about" class="user-post">About</a></li>
+							<li><a href="#contact" class="user-post">contact</a></li>
+						</ul>
+					</div>
+					<div class="profile-body">
+						<div id="posts" class="profile-posts tab">
+							<div class="profile-posts-content">
+								<h1>Published by the author</h1>
+								<div class="posts-wrapper">
+									<div class="post-grid-space">
+										<!--vertical medium Post start-->
+										<div class="author_post post_hover_display">
+											<div class="image">
+												<img
+													decoding="async"
+													src="news_img/coronavaccin.jpg"
+													alt="Image text reference"
+													loading="lazy"
+												/>
+
+												<div class="gradient"></div>
+												<div class="info">
+													<!--Avatar Post Author-->
+													<div class="avatar1">
+														<img
+															loading="lazy"
+															decoding="async"
+															src="Author_img/1.jpg"
+															alt="Image text reference"
+														/>
+													</div>
+													<!--Post Author name and meta data-->
+													<div class="post_card_info1">
+														<a href="author.html"
+															><div class="author">Wigui Doe</div></a
+														>
+														<p class="post-meta">
+															<span class="tie-date">
+																<i class="fa fa-clock-o" aria-hidden="true"></i>
+																January 28, 2021
+															</span>
+															<span class="post-views">
+																<i class="fa fa-eye" aria-hidden="true"></i>28
+															</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="text">
+												<h3>
+													<!--Post Title-->
+													<a href="single.html"
+														>5,000,000 people vaccinated against the Corona virus in
+														the world</a
+													>
+												</h3>
+												<!--Short text description-->
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													 Aliquam pariatur officia, aperiam quidem quasi, 
+													 tenetur molestiae. Architecto mollitia laborum 
+													 possimus iste esse. Perferendis tempora consectetur,
+													  quae qui nihil voluptas. Maiores debitis repellendus
+													   excepturi quisquam temporibus quam nobis voluptatem, 
+													   reiciendis distinctio deserunt vitae! Maxime provident,
+													    distinctio animi commodi nemo, eveniet fugit porro quos
+														 nesciunt quidem a
+												</p>
+												<!--Readmore Link-->
+												<a href="#" class="readmore_link">Read more</a>
+											</div>
+										</div>
+										<!--vertical medium Post end-->
+									</div>
+									<div class="post-grid-space">
+										<!--vertical medium Post start-->
+										<div class="author_post post_hover_display">
+											<div class="image">
+												<img
+													decoding="async"
+													src="news_img/police.jpg"
+													alt="Image text reference"
+													loading="lazy"
+												/>
+												<div class="gradient"></div>
+												<div class="info">
+													<!--Avatar Post Author-->
+													<div class="avatar1">
+														<img
+															loading="lazy"
+															decoding="async"
+															src="Author_img/1.jpg"
+															alt="Image text reference"
+														/>
+													</div>
+													<!--Post Author name and meta data-->
+													<div class="post_card_info1">
+														<a href="author.html"
+															><div class="author">Wigui Doe</div></a
+														>
+														<p class="post-meta">
+															<span class="tie-date">
+																<i class="fa fa-clock-o" aria-hidden="true"></i>
+																January 28, 2021
+															</span>
+															<span class="post-views">
+																<i class="fa fa-eye" aria-hidden="true"></i>28
+															</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="text">
+												<h3>
+													<!--Post Title-->
+													<a href="single.html"
+														>Police in the area used tear gas extensively during
+														protests.</a
+													>
+												</h3>
+												<!--Short text description-->
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													 Aliquam pariatur officia, aperiam quidem quasi, 
+													 tenetur molestiae. Architecto mollitia laborum 
+													 possimus iste esse. Perferendis tempora consectetur,
+													  quae qui nihil voluptas. Maiores debitis repellendus
+													   excepturi quisquam temporibus quam nobis voluptatem, 
+													   reiciendis distinctio deserunt vitae! Maxime provident,
+													    distinctio animi commodi nemo, eveniet fugit porro quos
+														 nesciunt quidem a
+												</p>
+												<!--Readmore Link-->
+												<a href="#" class="readmore_link">Read more</a>
+											</div>
+										</div>
+										<!--vertical medium Post end-->
+									</div>
+									<div class="post-grid-space">
+										<!--vertical medium Post start-->
+										<div class="author_post post_hover_display">
+											<div class="image">
+												<img
+													decoding="async"
+													src="news_img/coronavirus.jpg"
+													alt="Image text reference"
+													loading="lazy"
+												/>
+
+												<div class="gradient"></div>
+												<div class="info">
+													<!--Avatar Post Author-->
+													<div class="avatar1">
+														<img
+															loading="lazy"
+															decoding="async"
+															src="Author_img/1.jpg"
+															alt="Image text reference"
+														/>
+													</div>
+													<!--Post Author name and meta data-->
+													<div class="post_card_info1">
+														<a href="author.html"
+															><div class="author">Wigui Doe</div></a
+														>
+														<p class="post-meta">
+															<span class="tie-date">
+																<i class="fa fa-clock-o" aria-hidden="true"></i>
+																January 28, 2021
+															</span>
+															<span class="post-views">
+																<i class="fa fa-eye" aria-hidden="true"></i>28
+															</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="text">
+												<h3>
+													<!--Post Title-->
+													<a href="single.html"
+														>[Coronavirus] In just 3 months eurasia there were 509887
+														people died from the pandemic</a
+													>
+												</h3>
+												<!--Short text description-->
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													 Aliquam pariatur officia, aperiam quidem quasi, 
+													 tenetur molestiae. Architecto mollitia laborum 
+													 possimus iste esse. Perferendis tempora consectetur,
+													  quae qui nihil voluptas. Maiores debitis repellendus
+													   excepturi quisquam temporibus quam nobis voluptatem, 
+													   reiciendis distinctio deserunt vitae! Maxime provident,
+													    distinctio animi commodi nemo, eveniet fugit porro quos
+														 nesciunt quidem a
+												</p>
+												<!--Readmore Link-->
+												<a href="#" class="readmore_link">Read more</a>
+											</div>
+										</div>
+										<!--vertical medium Post end-->
+									</div>
+									<div class="post-grid-space">
+										<!--vertical medium Post start-->
+										<div class="author_post post_hover_display">
+											<div class="image">
+												<img
+													decoding="async"
+													src="news_img/shotgun.jpg"
+													alt="Image text reference"
+													loading="lazy"
+												/>
+
+												<div class="gradient"></div>
+												<div class="info">
+													<!--Avatar Post Author-->
+													<div class="avatar1">
+														<img
+															loading="lazy"
+															decoding="async"
+															src="Author_img/1.jpg"
+															alt="Image text reference"
+														/>
+													</div>
+													<!--Post Author name and meta data-->
+													<div class="post_card_info1">
+														<a href="author.html"
+															><div class="author">Wigui Doe</div></a
+														>
+														<p class="post-meta">
+															<span class="tie-date">
+																<i class="fa fa-clock-o" aria-hidden="true"></i>
+																January 28, 2021
+															</span>
+															<span class="post-views">
+																<i class="fa fa-eye" aria-hidden="true"></i>28
+															</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="text">
+												<h3>
+													<!--Post Title-->
+													<a href="single.html"
+														>Armed man shot by officers outside CIA headquarters:
+														FBI</a
+													>
+												</h3>
+												<!--Short text description-->
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													 Aliquam pariatur officia, aperiam quidem quasi, 
+													 tenetur molestiae. Architecto mollitia laborum 
+													 possimus iste esse. Perferendis tempora consectetur,
+													  quae qui nihil voluptas. Maiores debitis repellendus
+													   excepturi quisquam temporibus quam nobis voluptatem, 
+													   reiciendis distinctio deserunt vitae! Maxime provident,
+													    distinctio animi commodi nemo, eveniet fugit porro quos
+														 nesciunt quidem a
+												</p>
+												<!--Readmore Link-->
+												<a href="#" class="readmore_link">Read more</a>
+											</div>
+										</div>
+										<!--vertical medium Post end-->
+									</div>
+									<div class="post-grid-space">
+										<!--vertical medium Post start-->
+										<div class="author_post post_hover_display">
+											<div class="image">
+												<img
+													decoding="async"
+													src="news_img/climate_change.jpg"
+													alt="Image text reference"
+													loading="lazy"
+												/>
+
+												<div class="gradient"></div>
+												<div class="info">
+													<!--Avatar Post Author-->
+													<div class="avatar1">
+														<img
+															loading="lazy"
+															decoding="async"
+															src="Author_img/1.jpg"
+															alt="Image text reference"
+														/>
+													</div>
+													<!--Post Author name and meta data-->
+													<div class="post_card_info1">
+														<a href="author.html"
+															><div class="author">Wigui Doe</div></a
+														>
+														<p class="post-meta">
+															<span class="tie-date">
+																<i class="fa fa-clock-o" aria-hidden="true"></i>
+																January 28, 2021
+															</span>
+															<span class="post-views">
+																<i class="fa fa-eye" aria-hidden="true"></i>28
+															</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="text">
+												<h3>
+													<!--Post Title-->
+													<a href="single.html"
+														>Climate change is not giving good sign</a
+													>
+												</h3>
+												<!--Short text description-->
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													 Aliquam pariatur officia, aperiam quidem quasi, 
+													 tenetur molestiae. Architecto mollitia laborum 
+													 possimus iste esse. Perferendis tempora consectetur,
+													  quae qui nihil voluptas. Maiores debitis repellendus
+													   excepturi quisquam temporibus quam nobis voluptatem, 
+													   reiciendis distinctio deserunt vitae! Maxime provident,
+													    distinctio animi commodi nemo, eveniet fugit porro quos
+														 nesciunt quidem a
+												</p>
+												<!--Readmore Link-->
+												<a href="#" class="readmore_link">Read more</a>
+											</div>
+										</div>
+										<!--vertical medium Post end-->
+									</div>
+									<div class="post-grid-space">
+										<!--vertical medium Post start-->
+										<div class="author_post post_hover_display">
+											<div class="image">
+												<img
+													decoding="async"
+													src="news_img/photo/cell.jpg"
+													alt="Image text reference"
+													loading="lazy"
+												/>
+
+												<div class="gradient"></div>
+												<div class="info">
+													<!--Avatar Post Author-->
+													<div class="avatar1">
+														<img
+															loading="lazy"
+															decoding="async"
+															src="Author_img/1.jpg"
+															alt="Image text reference"
+														/>
+													</div>
+													<!--Post Author name and meta data-->
+													<div class="post_card_info1">
+														<a href="author.html"
+															><div class="author">Wigui Doe</div></a
+														>
+														<p class="post-meta">
+															<span class="tie-date">
+																<i class="fa fa-clock-o" aria-hidden="true"></i>
+																January 28, 2021
+															</span>
+															<span class="post-views">
+																<i class="fa fa-eye" aria-hidden="true"></i>28
+															</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="text">
+												<h3>
+													<!--Post Title-->
+													<a href="single.html"
+														>The Former foreign minister will spend around 12 years
+														in prison.</a
+													>
+												</h3>
+												<!--Short text description-->
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													 Aliquam pariatur officia, aperiam quidem quasi, 
+													 tenetur molestiae. Architecto mollitia laborum 
+													 possimus iste esse. Perferendis tempora consectetur,
+													  quae qui nihil voluptas. Maiores debitis repellendus
+													   excepturi quisquam temporibus quam nobis voluptatem, 
+													   reiciendis distinctio deserunt vitae! Maxime provident,
+													    distinctio animi commodi nemo, eveniet fugit porro quos
+														 nesciunt quidem a
+												</p>
+												<!--Readmore Link-->
+												<a href="#" class="readmore_link">Read more</a>
+											</div>
+										</div>
+										<!--vertical medium Post end-->
+									</div>
+								</div>
+								<!--Pagination section-->
+								<ul class="pagination">
+									<li><a href="#" class="prev">&lt; Prev</a></li>
+									<li class="pageNumber active"><a href="#">1</a></li>
+									<li class="pageNumber"><a href="#">2</a></li>
+									<li class="pageNumber"><a href="#">3</a></li>
+									<li><a href="#" class="next">Next ></a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="about" class="profile-About tab">
+							<h1>About</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Aliquam pariatur officia, aperiam quidem quasi, tenetur
+								molestiae. Architecto mollitia laborum possimus iste esse.
+								Perferendis tempora consectetur, quae qui nihil voluptas.
+								Maiores debitis repellendus excepturi quisquam temporibus quam
+								nobis voluptatem, reiciendis distinctio deserunt vitae! Maxime
+								provident, distinctio animi commodi nemo, eveniet fugit porro
+								quos nesciunt quidem a, corporis nisi dolorum minus sit eaque
+								error sequi ullam. Quidem ut fugiat, praesentium velit aliquam!
+							</p>
+						</div>
+						<div id="contact" class="profile-settings tab">
+							<div class="account-setting">
+								<div class="container_section">
+									<h1 class="text_category text_3d">Contact Wigui</h1>
+									<!--Section Contact-->
+									<div class="contact">
+										<div class="container">
+											<div class="content">
+												<form class="contact__form">
+													<!--Contact Info-->
+													<div class="contact__form-info">
+														<!--Name Field-->
+														<div class="contact__form-field">
+															<input
+																id="contact__form-label-name"
+																name="name"
+																placeholder="Name"
+																type="text"
+																class="contact__form-input"
+															/>
+															<label
+																class="contact__form-label"
+																for="contact__form-label-name"
+															>
+																<span class="contact__form-label-text"
+																	>Your Name</span
+																>
+															</label>
+														</div>
+														<!--Email Field-->
+														<div class="contact__form-field">
+															<input
+																id="contact__form-label-mail"
+																name="email"
+																placeholder="E-mail"
+																type="text"
+																class="contact__form-input"
+															/>
+															<label
+																class="contact__form-label"
+																for="contact__form-label-mail"
+															>
+																<span class="contact__form-label-text"
+																	>Your E-mail</span
+																>
+															</label>
+														</div>
+														<!--Phone Field-->
+														<div class="contact__form-field">
+															<input
+																id="contact__form-label-site"
+																name="phone"
+																placeholder="Phone"
+																type="text"
+																class="contact__form-input"
+															/>
+															<label
+																class="contact__form-label"
+																for="contact__form-label-site"
+															>
+																<span class="contact__form-label-text"
+																	>Your Phone</span
+																>
+															</label>
+														</div>
+													</div>
+													<!--Message Form-->
+													<div class="contact__form-text">
+														<!--Message Field-->
+														<div class="contact__form-field">
+															<textarea
+																id="contact__form-label-text"
+																name="author"
+																placeholder="Express your thoughts"
+																class="
+																	contact__form-input contact__form-textarea
+																"
+															></textarea>
+															<label
+																class="contact__form-label"
+																for="contact__form-label-text"
+															>
+																<span class="contact__form-label-text"
+																	>Express your thoughts</span
+																>
+															</label>
+														</div>
+													</div>
+													<!--Submit Button-->
+													<button
+														name="submit"
+														type="submit"
+														id="submit"
+														class="contact__form-submit"
+														style="align-items: center"
+													>
+														Send
+														<i
+															class="fa fa-paper-plane"
+															style="font-size: 1.2em"
+														></i>
+													</button>
+												</form>
+
+												<div class="contact__list">
+													<!-- contact -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--End Section contact-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Footer Section-->
+		<footer>
+			<div class="footer">
+				<a href="facebook.com"><i class="fa fa-facebook-f"></i></a>
+				<a href="twitter.com"><i class="fab fa-twitter "></i></a>
+				<a href="google.com"><i class="fab fa-google-plus-g"></i></a>
+				<a href="gmail.com"><i class="fa fa-envelope"></i></a>
+				<a href="contact.html"><i class="fa fa-phone"></i></a>
+				<p>
+					© Wiguiblog 2021. All Rights Reserved || Designed By:
+					<a href="themeforest.net/desorgui">Wigui</a>
+				</p>
+			</div>
+		</footer>
+		<!--End Footer Section-->
+		<script src="./assets/js/lib/jquery-3.3.1.min.js"></script>
+
+		<!-- :: Scripts -->
+		<script src="./assets/js/lib/jquery-3.3.1.min.js"></script>
+		<script src="./assets/js/lib/bootstrap.min.js"></script>
+		<script src="./assets/js/lib/fontAwesome.js"></script>
+		<script src="./assets/js/theme/theme.js"></script>
+	</body>
+</html>

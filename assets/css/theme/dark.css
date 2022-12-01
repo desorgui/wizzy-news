@@ -1,0 +1,334 @@
+:root {
+	--bodyColor: rgb(0, 0, 0);
+	--divColor: #333333;
+}
+
+body.dark {
+	background-color: var(--bodyColor);
+}
+body.dark,
+.dark nav.th-nav-st1 ul.nav-links li.th-nav-item > a,
+.dark nav.th-nav-st1 ul.th-dropdown-list li.th-dropdown-item a,
+.dark .search .searchInput2,
+.dark .search .searchButton2,
+.dark .searchBox,
+.dark .searchInput,
+.dark .moon i,
+.dark .banner_card .content h2,
+.dark .banner_card .content p,
+.dark .banner_card .content div,
+.dark .post_card_info,
+.dark ::-webkit-input-placeholder,
+.dark .text-container,
+.dark .text-byCategory,
+.dark .testimonial,
+.dark .swiper-container .swiper-slide .text div p,
+.dark .profile-side p,
+.dark .ico-wrap,
+.dark h1 a,
+.dark h2 a,
+.dark h3 a,
+.dark h4 a,
+.dark h5 a,
+.dark h6 a,
+.dark .contact__form-input:focus,
+.dark #temp,
+.dark .degrees,
+.dark .our_services .fa,
+.dark .pagination li a,
+.dark .contact__form-input,
+.dark .footer p,
+.dark a.text-dark,
+.dark .readmore_link,
+.dark .author,
+.dark .comments h2,
+.dark .card_content .btn {
+	color: rgba(255, 255, 255, 0.801) !important;
+}
+.dark .text-dark:hover {
+	color: #fff !important;
+}
+.dark nav.th-nav-st1,
+.dark nav.th-nav-st1 li.th-nav-item.has-dropdown ul.th-dropdown-list,
+.dark .search .searchInput2,
+.dark .searchButton2,
+.dark .search,
+.dark nav.th-nav-st1 ul.nav-links,
+.dark .footer-section,
+.dark .banner_card,
+.dark .post_card_img,
+.dark .texto .text-container,
+.dark .mediumPost,
+.dark .profile-header,
+.dark .profile-option:hover,
+.dark .profile-side,
+.dark .post:after,
+.dark .post:before,
+.dark .navig ul,
+.dark .profile-img img,
+.dark .footer,
+.dark .singlePost,
+.dark .singlePost_img,
+.dark .category,
+.dark .wrap,
+.dark .Horizontal_medium_post,
+.dark .vertical_small_post,
+.dark .vertical_medium_post,
+.dark .Horizontal_small_post,
+.dark .swiper-container .swiper-slide,
+.dark .why-us .service-box,
+.dark .card,
+.dark .post_container_2nd_category .medium .mediumPost,
+.dark .article,
+.dark #cover,
+.dark .contact,
+.dark .pagination,
+.dark .larg,
+.dark .single_post .content,
+.dark .mail_me,
+.dark .discover_more .service-box,
+.dark .author_post,
+.dark .comments {
+	background: var(--divColor);
+}
+.dark .largePost_img,
+.dark .largePost_img:before,
+.dark .largePost_img:after {
+	background: #718096;
+}
+.dark .article cite {
+	background: rgb(22, 22, 22);
+}
+.dark img {
+	-webkit-filter: grayscale(30%);
+	filter: grayscale(30%);
+}
+.dark .header_imm.imagedark {
+	display: block;
+}
+.dark .header_imm.imagelight {
+	display: none;
+}
+.dark a.brand {
+	color: rgba(255, 255, 255, 0.658);
+}
+.dark .strip_line {
+	background: -o-repeating-linear-gradient(
+		45deg,
+		#2f313856,
+		#2f313856 2px,
+		#2f3239 0,
+		#2f3239 4px
+	);
+	background: repeating-linear-gradient(
+		45deg,
+		#2f313856,
+		#2f313856 2px,
+		#2f3239 0,
+		#2f3239 4px
+	);
+}
+.dark .profile-img img {
+	border: 5px solid var(--divColor);
+}
+.dark .shadow1 {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.dark .label {
+	background: #222;
+	-webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1),
+		inset 0 2px 2px rgba(0, 0, 0, 0.1), inset 0 -2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1),
+		inset 0 2px 2px rgba(0, 0, 0, 0.1), inset 0 -2px 2px rgba(0, 0, 0, 0.1);
+}
+.dark .label .ball {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#444),
+		to(#222)
+	);
+	background: -o-linear-gradient(top, #444, #222);
+	background: linear-gradient(to bottom, #444, #222);
+	-webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.5),
+		inset 0 2px 2px rgba(255, 255, 255, 0.2),
+		inset 0 -2px 2px rgba(255, 255, 255, 0.2);
+	box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.5),
+		inset 0 2px 2px rgba(255, 255, 255, 0.2),
+		inset 0 -2px 2px rgba(255, 255, 255, 0.2);
+}
+.dark .searchButton,
+.dark .searchBox,
+.dark .searchBox:hover > .searchButton {
+	background-color: rgb(73, 73, 73);
+}
+.dark .searchBox:hover > .searchButton {
+	border: none;
+}
+.dark .search .searchInput2,
+.dark .search .searchButton2 {
+	-webkit-box-shadow: 5px 5px 10px #131313, -5px -5px 10px #2b2b2b;
+	box-shadow: 5px 5px 10px #131313, -5px -5px 10px #2b2b2b;
+}
+@media screen and (max-width: 991.98px) {
+	.dark a.moon {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		position: absolute;
+		right: 4rem;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.dark .moon {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		position: absolute;
+		right: 5rem;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.dark .moon i {
+		font-size: 1.5em;
+	}
+	.dark .sun {
+		display: none;
+	}
+}
+.dark .typePost {
+	background-color: linear-gradient(to top, var(--divColor), transparent);
+}
+.dark .typePost::before {
+	background: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		from(var(--divColor)),
+		to(transparent)
+	);
+	background: -o-linear-gradient(bottom, var(--divColor), transparent);
+	background: linear-gradient(to top, var(--divColor), transparent);
+}
+.dark .typePost::after {
+	mix-blend-mode: color;
+}
+.dark .card1 .content div {
+	font-size: 1.2em;
+}
+.dark .card1 .content div span {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: rgb(132, 161, 255);
+}
+.dark :focus::-webkit-input-placeholder {
+	opacity: 0.5;
+}
+.dark img,
+.dark .imgbx {
+	-webkit-filter: grayscale(30%);
+	filter: grayscale(30%);
+}
+
+.dark .swiper-pagination-bullet {
+	background: white;
+	opacity: 0.7;
+	outline: none !important;
+}
+.dark .swiper-pagination-bullet-active {
+	opacity: 1;
+	background: #007aff;
+}
+.dark .gradient {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(rgba(51, 51, 51, 0.2)),
+		color-stop(30%, rgba(51, 51, 51, 0.8)),
+		color-stop(50%, rgba(51, 51, 51, 1)),
+		to(rgba(51, 51, 51, 1))
+	);
+	background: -o-linear-gradient(
+		left,
+		rgba(51, 51, 51, 0.2) 0%,
+		rgba(51, 51, 51, 0.8) 30%,
+		rgba(51, 51, 51, 1) 50%,
+		rgba(51, 51, 51, 1) 100%
+	);
+	background: linear-gradient(
+		90deg,
+		rgba(51, 51, 51, 0.2) 0%,
+		rgba(51, 51, 51, 0.8) 30%,
+		rgba(51, 51, 51, 1) 50%,
+		rgba(51, 51, 51, 1) 100%
+	);
+}
+
+@media screen and (max-width: 769px) {
+	.dark .gradient {
+		background: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			from(rgba(51, 51, 51, 0.2)),
+			color-stop(30%, rgba(51, 51, 51, 0.8)),
+			color-stop(50%, rgba(51, 51, 51, 1)),
+			to(rgba(51, 51, 51, 1))
+		);
+		background: -o-linear-gradient(
+			bottom,
+			rgba(51, 51, 51, 0.2) 0%,
+			rgba(51, 51, 51, 0.8) 30%,
+			rgba(51, 51, 51, 1) 50%,
+			rgba(51, 51, 51, 1) 100%
+		);
+		background: linear-gradient(
+			0deg,
+			rgba(51, 51, 51, 0.2) 0%,
+			rgba(51, 51, 51, 0.8) 30%,
+			rgba(51, 51, 51, 1) 50%,
+			rgba(51, 51, 51, 1) 100%
+		);
+	}
+}
+.dark .comments__form-submit,
+.dark .contact__form-submit {
+	color: #fff;
+	border-color: #fff;
+}
+.dark .comments__form-label::after,
+.dark .contact__form-label::after {
+	background: #fff;
+}
+.dark .comments__form-input,
+.dark .contact__form-input {
+	border-bottom-color: rgba(255, 255, 255, 0.445);
+	color: rgba(255, 255, 255, 0.747);
+}
+/*Comment Dark mode*/
+.dark .comment-box .comment-head {
+	background: #717171;
+}
+.dark .comment-box .comment-content {
+	background: #989898;
+}
+.dark .comments-list .comment-box:after {
+	border-color: transparent #717171;
+}

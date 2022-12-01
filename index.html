@@ -1,0 +1,1509 @@
+<!--
+  Template Name   : Wigui - News | The Multi-Purpose HTML5 Blog Template
+  Author          : Wiguibillion - Desor Guishny
+  ThemeForest     : https://themeforest.net/user/desorgui
+  Contact         : wiguibillion@gmail.com
+  Created         : June 5th 2021
+  License         : You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- :: Head -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Wiguibillion - Desor Guishny" />
+	<meta name="description" content="Here is a precise description of my awesome webpage." />
+	<meta name="theme-color" content="#9b5de5" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="keywords" content="wigui, education, beauty, blog, personal, news, creative, clean, technology, multipurpose, product, product launch, responsive, software, startup" />
+		<link rel="icon" type="image/png" href="img/logo2.png" />
+
+		<!--:: CSS Files -->
+		<link rel="stylesheet" href="./assets/css/lib/swiper.min.css" />
+		<link rel="stylesheet" href="fontawesome/css/all.css" type="text/css" />
+		<link rel="stylesheet" href="./assets/css/lib/bootstrap.css" />
+		<link rel="stylesheet" href="./assets/css/lib/font-awesome.min.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/theme/style.css"
+			type="text/css"
+		/>
+		<link rel="stylesheet" href="./assets/css/theme/news.css" type="text/css" />
+		<link rel="stylesheet" href="./assets/css/theme/dark.css" type="text/css" />
+		<title>News Blog</title>
+	</head>
+	<body class="light">
+		<div class="topHeader">
+			<!-- :: Navbar -->
+			<nav class="th-nav-st1">
+				<div class="container">
+					<!-- nav content -->
+					<div
+						class="
+							nav-content
+							d-flex
+							align-items-center
+							justify-content-between
+						"
+					>
+						<!-- brand -->
+						<a href="index.html" class="brand">
+							<img
+								src="img/logo2.png"
+								class="img-fluid"
+								alt="logo"
+								loading="lazy"
+								decoding="async"
+							/>
+							Wigui
+						</a>
+
+						<!-- Search -->
+						<div class="search_container" id="search_containerId">
+							<div class="searchBox">
+								<input type="checkbox" class="searchCheck" id="searchCheck" />
+								<input
+									class="searchInput"
+									type="text"
+									name="search"
+									placeholder="Search"
+								/>
+								<button class="searchButton">
+									<i class="fa fa-search"></i>
+								</button>
+							</div>
+						</div>
+						<!-- togle dark/light-->
+						<a href="javascript:void(0);" class="sun">
+							<i class="fas fa-sun"></i>
+						</a>
+						<a href="javascript:void(0);" class="moon">
+							<i class="fas fa-moon"></i>
+						</a>
+						<div class="toggle">
+							<input type="checkbox" class="checkbox" id="chk" />
+							<div class="label">
+								<i class="fas fa-moon"></i>
+								<i class="fas fa-sun"></i>
+								<div class="ball" onClick="too()"></div>
+							</div>
+						</div>
+						<!-- links -->
+
+						<ul
+							class="
+								nav-links
+								list-unstyled
+								d-lg-flex
+								align-items-center
+								justify-content-end
+								mb-0
+							"
+						>
+							<!-- nav item has dropdown -->
+							<li class="th-nav-item position-relative">
+								<a
+									href="index.html"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>home</a
+								>
+								
+							</li>
+
+							<!-- nav item has dropdown -->
+							<li class="th-nav-item has-dropdown position-relative">
+								<a
+									href="#"
+									onclick="return false;"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>pages</a
+								>
+								<!-- dropdown list -->
+								<ul class="th-dropdown-list list-unstyled mb-0">
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="author.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Author</a
+										>
+									</li>
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="category.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Category</a
+										>
+									</li>
+									
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="single.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Single</a
+										>
+									</li>
+								</ul>
+							</li>
+
+							<!-- nav item -->
+							<li class="th-nav-item position-relative">
+								<a
+									href="#"
+									onclick="return false;"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>About Us</a
+								>
+							</li>
+						</ul>
+
+						<!-- toggler Menu-->
+						<button class="nav-toggler d-lg-none d-block" id="nav_toggler">
+							<span class="d-block w-100"></span>
+							<span class="d-block w-100"></span>
+							<span class="d-block w-100"></span>
+						</button>
+					</div>
+				</div>
+			</nav>
+			<!--Search max width 991px-->
+			<div class="search">
+				<input
+					class="searchInput2"
+					type="text"
+					name="Search2"
+					placeholder="Search"
+				/>
+				<button class="searchButton2">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+		</div>
+		<div class="content_full">
+			<!--post-->
+
+			<!--This section is made with Bootstrap(Dark mode Custom only)-->
+			<div class="container">
+				<div class="my-5">
+					<div class="row">
+						<!--Bootstrapp Big Post with Background-->
+						<div class="col-lg-4 col-md-12 p-2">
+							<div class="position-relative h-100">
+								<div
+									class="
+										position-absolute
+										p-3
+										d-flex
+										flex-column
+										align-items-start
+										justify-content-end
+									"
+								>
+									<a href="category.html" class="text-white p-1 px-2 mb-2">
+										<small>Politics</small>
+									</a>
+									<h3 class="h3">
+										<a href="single.html" class="text-white"
+											>Increase in market prices, scarcity of fuel for cars. all
+											come from poor management of the country</a
+										>
+									</h3>
+									<div class="mt-2">
+										<a href="author.html" class="pl-2 text-white mr-2"
+											><small>Wigui Doe</small></a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--Bootstrapp Sport Category-->
+						<div class="col-lg-4 col-md-6 p-2">
+							<div class="p-3 border shadow1">
+								<div
+									class="
+										border-bottom
+										mb-3
+										pb-3
+										px-2
+										d-flex
+										justify-content-between
+									"
+								>
+									<!--Bootstrapp Sport Category Header-->
+									<div class="d-flex align-items-center">
+										<a href="category.html" class="text-capitalize font-weight-bold mb-0"
+											>Sport</a
+										>
+									</div>
+									<a href="Category.html" class="text-dark">View More</a>
+								</div>
+
+								<!--Bootstrapp Sport Category 1st Post-->
+								<div class="mt-3 pb-3 border-bottom">
+									<a href="single.html" class="text-dark"
+										>A referee was rushed to hospital during the match</a
+									>
+									<div
+										class="
+											d-flex
+											align-items-start
+											justify-content-between
+											mt-2
+										"
+									>
+										<div>
+											<small class="text-secondary"
+												>Lorem ipsum dolor sit amet consectetur, adipisicing
+												elit. ..</small
+											>
+											<div class="d-flex align-items-center mt-1">
+												<small>6 min ago</small>
+											</div>
+										</div>
+										<img
+											loading="lazy"
+											decoding="async"
+											class="img-fluid mr-3"
+											src="news_img/referee.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+								</div>
+
+								<!--Bootstrapp Sport Category 2nd Post-->
+								<div class="mt-3 pb-3 border-bottom">
+									<a href="single.html" class="text-dark"
+										>Champions league: Elimination of Paris Saint Germain in the
+										semi-finals</a
+									>
+									<div
+										class="
+											d-flex
+											align-items-start
+											justify-content-between
+											mt-2
+										"
+									>
+										<div>
+											<small class="text-secondary"
+												>Lorem ipsum dolor sit amet consectetur, adipisicing
+												elit. ....</small
+											>
+											<div class="d-flex align-items-center mt-1">
+												<small>6 min ago</small>
+											</div>
+										</div>
+										<img
+											loading="lazy"
+											decoding="async"
+											class="img-fluid mr-3"
+											src="news_img/psg.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+								</div>
+
+								<!--Bootstrapp Sport Category 3rd Post-->
+								<div class="mt-3">
+									<a href="single.html" class="text-dark"
+										>Messi and Ronaldo will not share the golden ball podium
+										this year</a
+									>
+									<div
+										class="
+											d-flex
+											align-items-start
+											justify-content-between
+											mt-2
+										"
+									>
+										<div>
+											<small class="text-secondary"
+												>Lorem ipsum dolor sit amet consectetur, adipisicing
+												elit. ...</small
+											>
+											<div class="d-flex align-items-center mt-1">
+												<small>6 min ago</small>
+											</div>
+										</div>
+										<img
+											loading="lazy"
+											decoding="async"
+											class="img-fluid mr-3"
+											src="news_img/podium.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--Bootstrapp Society Category-->
+						<div class="col-lg-4 col-md-6 p-2">
+							<div class="p-3 border h-100 shadow1">
+								<div
+									class="
+										border-bottom
+										mb-3
+										pb-3
+										px-2
+										d-flex
+										justify-content-between
+									"
+								>
+									<!--Bootstrapp Society Category Header-->
+									<div class="d-flex align-items-center">
+										<a href="category.html" class="text-capitalize font-weight-bold mb-0"
+											>Society</a
+										>
+									</div>
+									<a href="Category.html" class="text-dark">View More</a>
+								</div>
+								<!--Bootstrapp Society Category Post-->
+								<div class="mb-3 rounded">
+									<img
+										loading="lazy"
+										decoding="async"
+										class="w-100 mb-3 rounded-lg"
+										src="news_img/shotgun.jpg"
+										alt="illustration_image"
+									/>
+									<div class="d-flex align-items-center mt-1">
+										<small>6 min ago</small>
+									</div>
+									<a href="single.html" class="d-block text-dark my-1"
+										>An epidemic has just appeared in our region on the middle
+										of summer and kill us</a
+									>
+									<small class="text-secondary"
+										>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Repellat, excepturi. Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Repellat, excepturi.</small
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Most Popular Post using swiper.js for slideshow-->
+				<div class="widget_top">
+					<h4>Most Popular</h4>
+					<div class="strip_line"></div>
+				</div>
+				<!-- :: Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<!--Blog Card begin-->
+							<div class="blog-card spring-fever">
+								<img
+									loading="lazy"
+									decoding="async"
+									src="news_img/police.jpg"
+									alt="illustration_image"
+									class="card_image"
+								/>
+								<div class="title-content">
+									<h3>
+										<a href="single.html"
+											>Twoo man dead on a drug deal. The police can't do
+											anything</a
+										>
+									</h3>
+									<div class="card_slider_category">
+										<a href="category.html">News_category</a>
+									</div>
+								</div>
+								<div class="card-info">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim...
+									<a href="single.html">Read More</a>
+								</div>
+								<div class="utility-info">
+									<ul class="utility-list">
+										<li>
+											<span class="far fa-thumbs-up"></span><a href="#"> 2</a>
+										</li>
+										<li>
+											<span class="far fa-comment"></span><a href="#"> 12</a>
+										</li>
+										<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+									</ul>
+								</div>
+								<div class="gradient-overlay"></div>
+								<div class="color-overlay"></div>
+							</div>
+							<!--Blog Card End-->
+						</div>
+						<div class="swiper-slide">
+							<!--Blog Card begin-->
+							<div class="blog-card spring-fever">
+								<img
+									loading="lazy"
+									decoding="async"
+									src="news_img/politic(6).jpg"
+									alt="illustration_image"
+									class="card_image"
+								/>
+								<div class="title-content">
+									<h3>
+										<a href="single.html"
+											>The House of representatives has just adopted a
+											resolution on health crises.</a
+										>
+									</h3>
+									<div class="card_slider_category">
+										<a href="category.html">News_category</a>
+									</div>
+								</div>
+								<div class="card-info">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim...
+									<a href="single.html">Read More</a>
+								</div>
+								<div class="utility-info">
+									<ul class="utility-list">
+										<li>
+											<span class="far fa-thumbs-up"></span><a href="#"> 2</a>
+										</li>
+										<li>
+											<span class="far fa-comment"></span><a href="#"> 12</a>
+										</li>
+										<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+									</ul>
+								</div>
+								<div class="gradient-overlay"></div>
+								<div class="color-overlay"></div>
+							</div>
+							<!--Blog Card End-->
+						</div>
+						<div class="swiper-slide">
+							<!--Blog Card begin-->
+							<div class="blog-card spring-fever">
+								<img
+									loading="lazy"
+									decoding="async"
+									src="news_img/shotgun.jpg"
+									alt="illustration_image"
+									class="card_image"
+								/>
+								<div class="title-content">
+									<h3>
+										<a href="single.html"
+											>assasinnat of a development science student from a very
+											prestigious university</a
+										>
+									</h3>
+									<div class="card_slider_category">
+										<a href="category.html">News_category</a>
+									</div>
+								</div>
+								<div class="card-info">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim...
+									<a href="single.html">Read More</a>
+								</div>
+								<div class="utility-info">
+									<ul class="utility-list">
+										<li>
+											<span class="far fa-thumbs-up"></span><a href="#"> 2</a>
+										</li>
+										<li>
+											<span class="far fa-comment"></span><a href="#"> 12</a>
+										</li>
+										<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+									</ul>
+								</div>
+								<div class="gradient-overlay"></div>
+								<div class="color-overlay"></div>
+							</div>
+							<!--Blog Card End-->
+						</div>
+						<div class="swiper-slide">
+							<!--Blog Card begin-->
+							<div class="blog-card spring-fever">
+								<img
+									loading="lazy"
+									decoding="async"
+									src="news_img/coronavaccin.jpg"
+									alt="illustration_image"
+									class="card_image"
+								/>
+								<div class="title-content">
+									<h3>
+										<a href="single.html"
+											>5,000,000 people vaccinated against the Corona virus in
+											the world</a
+										>
+									</h3>
+									<div class="card_slider_category">
+										<a href="category.html">News_category</a>
+									</div>
+								</div>
+								<div class="card-info">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim...
+									<a href="single.html">Read More</a>
+								</div>
+								<div class="utility-info">
+									<ul class="utility-list">
+										<li>
+											<span class="far fa-thumbs-up"></span><a href="#"> 2</a>
+										</li>
+										<li>
+											<span class="far fa-comment"></span><a href="#"> 12</a>
+										</li>
+										<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+									</ul>
+								</div>
+								<div class="gradient-overlay"></div>
+								<div class="color-overlay"></div>
+							</div>
+							<!--Blog Card End-->
+						</div>
+						<div class="swiper-slide">
+							<!--Blog Card begin-->
+							<div class="blog-card spring-fever">
+								<img
+									loading="lazy"
+									decoding="async"
+									src="news_img/photo/explo.jpg"
+									alt="illustration_image"
+									class="card_image"
+								/>
+								<div class="title-content">
+									<h3>
+										<a href="single.html"
+											>There as an explosion in a European hospital because of
+											an oxygen cylinder</a
+										>
+									</h3>
+									<div class="card_slider_category">
+										<a href="category.html">News_category</a>
+									</div>
+								</div>
+								<div class="card-info">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim...
+									<a href="single.html">Read More</a>
+								</div>
+								<div class="utility-info">
+									<ul class="utility-list">
+										<li>
+											<span class="far fa-thumbs-up"></span><a href="#"> 2</a>
+										</li>
+										<li>
+											<span class="far fa-comment"></span><a href="#"> 12</a>
+										</li>
+										<li><span class="far fa-calendar"></span> 07 apr 2021</li>
+									</ul>
+								</div>
+								<div class="gradient-overlay"></div>
+								<div class="color-overlay"></div>
+							</div>
+							<!--Blog Card End-->
+						</div>
+					</div>
+
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev swiper-button-blue"></div>
+					<div class="swiper-button-next swiper-button-blue"></div>
+				</div>
+
+				<div class="content">
+					<div class="main1">
+						<!--Widget Top  Container -->
+						<div class="widget_top">
+							<h4>
+								<a href="category.html"> Politic</a>
+							</h4>
+							<div class="strip_line"></div>
+						</div>
+						<div class="post_container_1st_category">
+							<!--Large Post Begin-->
+							<article class="largePost">
+								<!--Large Post Image Container -->
+								<div class="largePost_img">
+									<div class="zoom">
+										<a href="single.html">
+											<img
+												loading="lazy"
+												decoding="async"
+												src="news_img/politic(6).jpg"
+												alt="illustration_image"
+										/></a>
+									</div>
+								</div>
+								<!--Large Post Text and Button Container -->
+								<div class="largePost_text">
+									<h3>
+										<a href="single.html"
+											>The general assembly voted on the fate of the president
+											of the world union</a
+										>
+									</h3>
+									<p>
+										The America is great you must believe in God antsy bingers
+										of Netflix
+									</p>
+									<a href="single.html" class="readMore">Read More</a>
+								</div>
+							</article>
+
+							<div class="medium">
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/cell.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>The Former foreign minister will spend around 12 years
+												in prison.</a
+											>
+										</h5>
+
+										<!--Post Meta  Container -->
+										<p class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</p>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/police.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>Police in the area used tear gas extensively during
+												protests.</a
+											>
+										</h5>
+
+										<!--Post Meta  Container -->
+										<p class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</p>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/money.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>According to the journalist, politics is a source of
+												corruption</a
+											>
+										</h5>
+
+										<!--Post Meta  Container -->
+										<p class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</p>
+									</div>
+								</article>
+							</div>
+						</div>
+						<!--Widget Top  Container -->
+						<div class="widget_top">
+							<h4>
+								<a href="category.html">world News</a>
+							</h4>
+							<div class="strip_line"></div>
+						</div>
+						<div class="post_container_2nd_category">
+							<!--Large Post Begin-->
+							<article class="largePost">
+								<!--Large Post Image Container -->
+								<div class="largePost_img">
+									<div class="zoom">
+										<a href="single.html">
+											<img
+												loading="lazy"
+												decoding="async"
+												src="news_img/coronavirus.jpg"
+												alt="illustration_image"
+										/></a>
+									</div>
+								</div>
+								<!--Large Post Text and Button Container -->
+								<div class="largePost_text">
+									<h3>
+										<a href="single.html"
+											>[Coronavirus] In just 3 months eurasia there were 509887
+											people died from the pandemic</a
+										>
+									</h3>
+									<p>
+										The America is great you must believe in God antsy bingers
+										of Netflix
+									</p>
+									<a href="single.html" class="readMore">Read More</a>
+								</div>
+							</article>
+
+							<div class="medium">
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/explo.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>There as an explosion in a European hospital because of
+												an oxygen cylinder</a
+											>
+										</h5>
+										<!--Post Meta Container -->
+										<div class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</div>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/death.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>More than 13 dead were recorded during a demand of
+												Africans against the bad exploitation of the region</a
+											>
+										</h5>
+										<!--Post Meta Container -->
+										<div class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</div>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/climate_change.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html">Climate change is not giving good sign</a>
+										</h5>
+										<!--Post Meta Container -->
+										<div class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</div>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/shotgun.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>Armed man shot by officers outside CIA headquarters:
+												FBI</a
+											>
+										</h5>
+										<!--Post Meta Container -->
+										<div class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</div>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/coronavaccin.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>5,000,000 people vaccinated against the Corona virus in
+												the world</a
+											>
+										</h5>
+										<!--Post Meta Container -->
+										<div class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<!--Widget Top  Container -->
+						<div class="widget_top">
+							<h4>
+								<a href="category.html">Science</a>
+							</h4>
+							<div class="strip_line"></div>
+						</div>
+						<div class="post_container_1st_category">
+							<!--Large Post Begin-->
+							<article class="largePost">
+								<!--Large Post Image Container -->
+								<div class="largePost_img">
+									<div class="zoom">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/protestater.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+								</div>
+								<!--Large Post Text and Button Container -->
+								<div class="largePost_text">
+									<h3>
+										<a href="single.html"
+											>The Main Post Must be a good title for this news</a
+										>
+									</h3>
+									<p>
+										The America is great you must believe in God antsy bingers
+										of Netflix
+									</p>
+									<a href="single.html" class="readMore">Read More</a>
+								</div>
+							</article>
+
+							<div class="medium">
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/fuse.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>The America is great you must believe in God</a
+											>
+										</h5>
+
+										<!--Post Meta  Container -->
+										<p class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</p>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/groups.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>The America is great you must believe in God</a
+											>
+										</h5>
+
+										<!--Post Meta  Container -->
+										<p class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</p>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/money1.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>The America is great you must believe in God</a
+											>
+										</h5>
+
+										<!--Post Meta  Container -->
+										<p class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</p>
+									</div>
+								</article>
+							</div>
+						</div>
+						<!--Widget Top  Container -->
+						<div class="widget_top">
+							<h4>
+								<a href="category.html">Society</a>
+							</h4>
+							<div class="strip_line"></div>
+						</div>
+						<div class="post_container_2nd_category">
+							<!--Large Post Begin-->
+							<article class="largePost">
+								<!--Large Post Image Container -->
+								<div class="largePost_img">
+									<div class="zoom">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/techbenefit.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+								</div>
+								<!--Large Post Text and Button Container -->
+								<div class="largePost_text">
+									<h3>
+										<a href="single.html"
+											>The Main Post Must be a good title for this news</a
+										>
+									</h3>
+									<p>
+										The America is great you must believe in God antsy bingers
+										of Netflix
+									</p>
+									<a href="single.html" class="readMore">Read More</a>
+								</div>
+							</article>
+
+							<div class="medium">
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/techteam.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>The America is great you must believe in God</a
+											>
+										</h5>
+										<!--Post Meta Container -->
+										<div class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</div>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/watch.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>The America is great you must believe in God</a
+											>
+										</h5>
+										<!--Post Meta Container -->
+										<div class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</div>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/groups.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>The America is great you must believe in God</a
+											>
+										</h5>
+										<!--Post Meta Container -->
+										<div class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</div>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/labo.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>The America is great you must believe in God</a
+											>
+										</h5>
+										<!--Post Meta Container -->
+										<div class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</div>
+									</div>
+								</article>
+
+								<!--Medium Post Begin-->
+								<article class="mediumPost">
+									<!--Medium Post Image Container -->
+									<div class="mediumPost_img">
+										<img
+											loading="lazy"
+											decoding="async"
+											src="news_img/photo/photograph.jpg"
+											alt="illustration_image"
+										/>
+									</div>
+									<!--Medium Post Text Container -->
+									<div class="mediumPost_text">
+										<h5>
+											<a href="single.html"
+												>The America is great you must believe in God</a
+											>
+										</h5>
+										<!--Post Meta Container -->
+										<div class="post-meta">
+											<span class="tie-date">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+												January 28, 2021
+											</span>
+											<span class="post-views">
+												<i class="fa fa-eye" aria-hidden="true"></i>28
+											</span>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+					<!--Right Side Section-->
+					<div class="side">
+						<div class="section_Right">
+							<!--Widget Top Container-->
+							<div class="widget_top">
+								<h4>weather</h4>
+								<div class="strip_line"></div>
+							</div>
+
+							<!--Weather Container-->
+							<div class="weather">
+								<div class="temp_info">
+									<i class="fas fa-cloud-sun"></i>
+									<div class="degrees">
+										<h2 id="temp">6</h2>
+										<span class="temp">&#176;</span>
+									</div>
+								</div>
+								<div class="other_info">
+									<h4 id="city">City</h4>
+									<h3 id="desc">Sunny</h3>
+									<h5 class="small">
+										Wind speed : <span id="wind">loading...</span>
+									</h5>
+									<h5 class="small">
+										Pressure : <span id="pres">loading...</span>
+									</h5>
+									<h5 class="small">
+										Humidity : <span id="humid">loading...</span>
+									</h5>
+								</div>
+							</div>
+
+							<!--Widget Top Container-->
+							<div class="widget_top">
+								<h4>
+									<a href="category.html"> Latest News</a>
+								</h4>
+								<div class="strip_line"></div>
+							</div>
+
+							<!--Recent Post Container-->
+							<div class="popular_post">
+								<div class="widget_popular_post">
+									<article class="popular_post_content">
+										<div class="popular_post_img">
+											<img
+												loading="lazy"
+												decoding="async"
+												src="news_img/photo/explo.jpg"
+												alt="illustration_image"
+											/>
+										</div>
+										<div class="popular_post_text">
+											<h6>
+												<a href="single.html"
+													>There as an explosion in a European hospital because
+													of an oxygen cylinder</a
+												>
+											</h6>
+
+											<!--Post Meta  Container -->
+											<p class="post-meta">
+												<span class="tie-date">
+													<i class="fa fa-clock-o" aria-hidden="true"></i>
+													January 28, 2021
+												</span>
+											</p>
+										</div>
+									</article>
+								</div>
+								<div class="widget_popular_post">
+									<article class="popular_post_content">
+										<div class="popular_post_img">
+											<img
+												loading="lazy"
+												decoding="async"
+												src="news_img/photo/explo.jpg"
+												alt="illustration_image"
+											/>
+										</div>
+										<div class="popular_post_text">
+											<h6>
+												<a href="single.html"
+													>The America is great you must believe in God</a
+												>
+											</h6>
+
+											<!--Post Meta  Container -->
+											<p class="post-meta">
+												<span class="tie-date">
+													<i class="fa fa-clock-o" aria-hidden="true"></i>
+													January 28, 2021
+												</span>
+											</p>
+										</div>
+									</article>
+								</div>
+								<div class="widget_popular_post">
+									<article class="popular_post_content">
+										<div class="popular_post_img">
+											<img
+												loading="lazy"
+												decoding="async"
+												src="news_img/photo/newspaper.jpg"
+												alt="illustration_image"
+											/>
+										</div>
+										<div class="popular_post_text">
+											<h6>
+												<a href="single.html"
+													>The America is great you must believe in God</a
+												>
+											</h6>
+
+											<!--Post Meta  Container -->
+											<p class="post-meta">
+												<span class="tie-date">
+													<i class="fa fa-clock-o" aria-hidden="true"></i>
+													January 28, 2021
+												</span>
+											</p>
+										</div>
+									</article>
+								</div>
+								<div class="widget_popular_post">
+									<article class="popular_post_content">
+										<div class="popular_post_img">
+											<img
+												loading="lazy"
+												decoding="async"
+												src="news_img/photo/money.jpg"
+												alt="illustration_image"
+											/>
+										</div>
+										<div class="popular_post_text">
+											<h6>
+												<a href="single.html"
+													>The America is great you must believe in God</a
+												>
+											</h6>
+
+											<!--Post Meta  Container -->
+											<p class="post-meta">
+												<span class="tie-date">
+													<i class="fa fa-clock-o" aria-hidden="true"></i>
+													January 28, 2021
+												</span>
+											</p>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Footer Section-->
+		<footer>
+			<div class="footer">
+				<a href="facebook.com"><i class="fa fa-facebook-f"></i></a>
+				<a href="twitter.com"><i class="fab fa-twitter "></i></a>
+				<a href="google.com"><i class="fab fa-google-plus-g"></i></a>
+				<a href="gmail.com"><i class="fa fa-envelope"></i></a>
+				<a href="contact.html"><i class="fa fa-phone"></i></a>
+				<p>
+					© Wiguiblog 2021. All Rights Reserved || Designed By:
+					<a href="themeforest.net/desorgui">Wigui</a>
+				</p>
+			</div>
+		</footer>
+		<!--End Footer Section-->
+
+		<!-- :: Scripts -->
+		<script src="./assets/js/lib/jquery-3.3.1.min.js"></script>
+		<script src="./assets/js/lib/bootstrap.min.js"></script>
+		<script src="./assets/js/lib/fontAwesome.js"></script>
+		<script src="./assets/js/lib/swiper.min.js"></script>
+		<script src="./assets/js/theme/theme.js"></script>
+	</body>
+</html>
