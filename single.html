@@ -1,0 +1,686 @@
+<!--
+  Template Name   : Wigui - News | The Multi-Purpose HTML5 Blog Template
+  Author          : Wiguibillion - Desor Guishny
+  ThemeForest     : https://themeforest.net/user/desorgui
+  Contact         : wiguibillion@gmail.com
+  Created         : June 5th 2021
+  License         : You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- :: Head -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Wiguibillion - Desor Guishny" />
+	<meta name="description" content="Here is a precise description of my awesome webpage." />
+	<meta name="theme-color" content="#9b5de5" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="keywords" content="wigui, education, beauty, blog, personal, news, creative, clean, technology, multipurpose, product, product launch, responsive, software, startup" />
+		<link rel="icon" type="image/png" href="img/logo2.png" />
+
+		<!--:: CSS Files -->
+		<link rel="stylesheet" href="./assets/css/lib/swiper.min.css" />
+		<link rel="stylesheet" href="fontawesome/css/all.css" type="text/css" />
+		<link rel="stylesheet" href="./assets/css/lib/bootstrap.css" />
+		<link rel="stylesheet" href="./assets/css/lib/font-awesome.min.css" />
+		<link rel="stylesheet" href="./assets/css/lib/prism.css" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/theme/style.css"
+			type="text/css"
+		/>
+		<link rel="stylesheet" href="./assets/css/theme/single.css" />
+		<link rel="stylesheet" href="./assets/css/theme/dark.css" type="text/css" />
+
+		<title>Single Page</title>
+	</head>
+	<body>
+		<div class="topHeader">
+			<!-- :: Navbar -->
+			<nav class="th-nav-st1">
+				<div class="container">
+					<!-- nav content -->
+					<div
+						class="
+							nav-content
+							d-flex
+							align-items-center
+							justify-content-between
+						"
+					>
+						<!-- brand -->
+						<a href="index.html" class="brand">
+							<img
+								src="img/logo2.png"
+								class="img-fluid"
+								alt="logo"
+								loading="lazy"
+								decoding="async"
+							/>
+							Wigui
+						</a>
+
+						<!-- Search -->
+						<div class="search_container" id="search_containerId">
+							<div class="searchBox">
+								<input type="checkbox" class="searchCheck" id="searchCheck" />
+								<input
+									class="searchInput"
+									type="text"
+									name="search"
+									placeholder="Search"
+								/>
+								<button class="searchButton">
+									<i class="fa fa-search"></i>
+								</button>
+							</div>
+						</div>
+						<!-- togle dark/light-->
+						<a href="javascript:void(0);" class="sun">
+							<i class="fas fa-sun"></i>
+						</a>
+						<a href="javascript:void(0);" class="moon">
+							<i class="fas fa-moon"></i>
+						</a>
+						<div class="toggle">
+							<input type="checkbox" class="checkbox" id="chk" />
+							<div class="label">
+								<i class="fas fa-moon"></i>
+								<i class="fas fa-sun"></i>
+								<div class="ball" onClick="too()"></div>
+							</div>
+						</div>
+						<!-- links -->
+
+						<ul
+							class="
+								nav-links
+								list-unstyled
+								d-lg-flex
+								align-items-center
+								justify-content-end
+								mb-0
+							"
+						>
+							<!-- nav item has dropdown -->
+							<li class="th-nav-item position-relative">
+								<a
+									href="index.html"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>home</a
+								>
+								
+							</li>
+
+							<!-- nav item has dropdown -->
+							<li class="th-nav-item has-dropdown position-relative">
+								<a
+									href="#"
+									onclick="return false;"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>pages</a
+								>
+								<!-- dropdown list -->
+								<ul class="th-dropdown-list list-unstyled mb-0">
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="author.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Author</a
+										>
+									</li>
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="category.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Category</a
+										>
+									</li>
+									
+									<!-- dropdown Item -->
+									<li class="th-dropdown-item">
+										<a
+											href="single.html"
+											class="
+												position-relative
+												d-flex
+												align-items-center
+												justify-content-between
+												text-capitalize
+											"
+											>Single</a
+										>
+									</li>
+								</ul>
+							</li>
+
+							<!-- nav item -->
+							<li class="th-nav-item position-relative">
+								<a
+									href="#"
+									onclick="return false;"
+									class="
+										position-relative
+										d-flex
+										align-items-center
+										justify-content-lg-center justify-content-between
+										text-capitalize
+									"
+									>About Us</a
+								>
+							</li>
+						</ul>
+
+						<!-- toggler Menu-->
+						<button class="nav-toggler d-lg-none d-block" id="nav_toggler">
+							<span class="d-block w-100"></span>
+							<span class="d-block w-100"></span>
+							<span class="d-block w-100"></span>
+						</button>
+					</div>
+				</div>
+			</nav>
+			<!--Search max width 991px-->
+			<div class="search">
+				<input
+					class="searchInput2"
+					type="text"
+					name="Search2"
+					placeholder="Search"
+				/>
+				<button class="searchButton2">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+		</div>
+		<!-- Banner Article-->
+		<div id="cover" class="top">
+			<!-- Banner Text-->
+			<div class="cover-text">
+				<!-- Article Title-->
+				<h2>Different styles of Article headers are Available!</h2>
+
+				<!-- Article Subtitle-->
+				<h4>
+					Change the look of your block with this weird trick, the results will
+					make you feel like a css ninja.
+				</h4>
+			</div>
+
+			<!-- Article Image-->
+			<img
+				src="news_img/news(9).jpg"
+				class="cover-image"
+				alt="illustration image"
+				loading="lazy"
+				decoding="async"
+			/>
+		</div>
+
+		<!-- Article Text-->
+		<article class="article">
+			<!-- Author Information-->
+			<div id="by">
+				<img src="Author_img/1.jpg" alt="Author" />
+				<i>By:<a href="author.html">Wigui Doe</a></i>
+				<a href="#">Category Tag</a>
+			</div>
+
+			<!-- Article Fulltext Description-->
+			<p class="drop-cap">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+				pariatur officia, aperiam quidem quasi, tenetur molestiae. Architecto
+				mollitia laborum possimus iste esse. Perferendis tempora consectetur,
+				quae qui nihil voluptas. Maiores debitis repellendus excepturi quisquam
+				temporibus quam nobis voluptatem, reiciendis distinctio deserunt vitae!
+				Maxime provident, distinctio animi commodi nemo, eveniet fugit porro
+				quos nesciunt quidem a, corporis nisi dolorum minus sit eaque error
+				sequi ullam. Quidem ut fugiat, praesentium velit aliquam!Lorem ipsum
+				dolor sit amet, consectetur adipisicing elit. Aliquam pariatur officia,
+				aperiam quidem quasi, tenetur molestiae. Architecto mollitia laborum
+				possimus iste esse. Perferendis tempora consectetur, quae qui nihil
+				voluptas. Maiores debitis repellendus excepturi quisquam temporibus quam
+				nobis voluptatem, reiciendis distinctio deserunt vitae! Maxime
+				provident, distinctio animi commodi nemo, eveniet fugit porro quos
+				nesciunt quidem a, corporis nisi dolorum minus sit eaque error sequi
+				ullam. Quidem ut fugiat, praesentium velit aliquam!
+			</p>
+
+			<!-- Article Citation Section Start-->
+			<cite
+				><b
+					>" Oh wow It's amazing how much people can speak without saying
+					anything, especialy when it comes to demos or prototypes where you
+					really don't expect anyone to take time off their day and read. "</b
+				>
+				- Don Joe</cite
+			>
+
+			<!-- Article Citation section End-->
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+				pariatur officia, aperiam quidem quasi, tenetur molestiae. Architecto
+				mollitia laborum possimus iste esse. Perferendis tempora consectetur,
+				quae qui nihil voluptas. Maiores debitis repellendus excepturi quisquam
+				temporibus quam nobis voluptatem, reiciendis distinctio deserunt vitae!
+				Maxime provident, distinctio animi commodi nemo, eveniet fugit porro
+				quos nesciunt quidem a, corporis nisi dolorum minus sit eaque error
+				sequi ullam. Quidem ut fugiat, praesentium velit aliquam!
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+				pariatur officia, aperiam quidem quasi, tenetur molestiae. Architecto
+				mollitia laborum possimus iste esse. Perferendis tempora consectetur,
+				quae qui nihil voluptas. Maiores debitis repellendus excepturi quisquam
+				temporibus quam nobis voluptatem, reiciendis distinctio deserunt vitae!
+				Maxime provident, distinctio animi commodi nemo, eveniet fugit porro
+				quos nesciunt quidem a, corporis nisi dolorum minus sit eaque error
+				sequi ullam. Quidem ut fugiat, praesentium velit aliquam!
+			</p>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+				pariatur officia, aperiam quidem quasi, tenetur molestiae. Architecto
+				mollitia laborum possimus iste esse. Perferendis tempora consectetur,
+				quae qui nihil voluptas. Maiores debitis repellendus excepturi quisquam
+				temporibus quam nobis voluptatem, reiciendis distinctio deserunt vitae!
+				Maxime provident, distinctio animi commodi nemo, eveniet fugit porro
+				quos nesciunt quidem a, corporis nisi dolorum minus sit eaque error
+				sequi ullam. Quidem ut fugiat, praesentium velit aliquam!
+			</p>
+
+			<!-- Article Comment Section-->
+			<div class="comments">
+				<h2>Comment</h2>
+
+				<!-- Article Comment Form-->
+				<form class="comments__form">
+					<div class="comments__form-info">
+						<!-- Name field Comment Form-->
+						<div class="comments__form-field">
+							<input
+								id="comments__form-label-name"
+								name="author"
+								placeholder="Name"
+								type="text"
+								class="comments__form-input"
+							/>
+							<label
+								class="comments__form-label"
+								for="comments__form-label-name"
+							>
+								<span class="comments__form-label-text">Name</span>
+							</label>
+						</div>
+
+						<!-- Email field Comment Form-->
+						<div class="comments__form-field">
+							<input
+								id="comments__form-label-mail"
+								name="author"
+								placeholder="E-mail"
+								type="text"
+								class="comments__form-input"
+							/>
+							<label
+								class="comments__form-label"
+								for="comments__form-label-mail"
+							>
+								<span class="comments__form-label-text">E-mail</span>
+							</label>
+						</div>
+
+						<!-- Phone field Comment Form-->
+						<div class="comments__form-field">
+							<input
+								id="comments__form-label-phone"
+								name="author"
+								placeholder="Phone"
+								type="text"
+								class="comments__form-input"
+							/>
+							<label
+								class="comments__form-label"
+								for="comments__form-label-phone"
+							>
+								<span class="comments__form-label-text">Phone Number</span>
+							</label>
+						</div>
+					</div>
+
+					<!-- Message field Comment Form-->
+					<div class="comments__form-text">
+						<div class="comments__form-field">
+							<textarea
+								id="comments__form-label-text"
+								name="author"
+								placeholder="Express your thoughts"
+								class="comments__form-input comments__form-textarea"
+							></textarea>
+							<label
+								class="comments__form-label"
+								for="comments__form-label-text"
+							>
+								<span class="comments__form-label-text"
+									>Express your thoughts</span
+								>
+							</label>
+						</div>
+					</div>
+
+					<!-- Submit Comment Button-->
+					<input
+						name="submit"
+						type="submit"
+						id="submit"
+						class="comments__form-submit"
+						value="Post Comment"
+					/>
+				</form>
+
+				<div class="comments__list">
+					<!-- Comments -->
+				</div>
+			</div>
+
+			<!-- Master Container -->
+			<div class="comments-container">
+				<ul id="comments-list" class="comments-list">
+					<li>
+						<div class="comment-main-level">
+							<!-- Avatar -->
+							<div class="comment-avatar">
+								<img src="Author_img/1.jpg" alt="" />
+							</div>
+							<!-- Comment Container -->
+							<div class="comment-box">
+								<div class="comment-head">
+									<h6 class="comment-name by-author">
+										<a href="author.html">wigui Doe</a>
+									</h6>
+									<span>20 minutes</span>
+									<i class="fa fa-reply"></i>
+									<i class="fa fa-thumbs-up"></i>
+								</div>
+								<div class="comment-content">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Velit omnis animi et iure laudantium vitae, praesentium optio,
+									sapi distinctio illo?
+								</div>
+							</div>
+						</div>
+						<!-- Comment Reply -->
+						<ul class="comments-list reply-list">
+							<li>
+								<!-- Avatar -->
+								<div class="comment-avatar">
+									<img src="Author_img/2.jpg" alt="" />
+								</div>
+								<!-- Comment Container -->
+								<div class="comment-box">
+									<div class="comment-head">
+										<h6 class="comment-name"><a href="#">jane prog</a></h6>
+										<span>10 minutes</span>
+										<i class="fa fa-reply"></i>
+										<i class="fa fa-thumbs-up"></i>
+									</div>
+									<div class="comment-content">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Velit omnis animi et iure laudantium vitae, praesentium
+										optio, sapiente distinctio illo?
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<!-- Avatar -->
+								<div class="comment-avatar">
+									<img src="Author_img/3.jpg" alt="" />
+								</div>
+								<!-- Comment Container -->
+								<div class="comment-box">
+									<div class="comment-head">
+										<h6 class="comment-name by-author">
+											<a href="author.html">wigui Doe</a>
+										</h6>
+										<span>10 minutes</span>
+										<i class="fa fa-reply"></i>
+										<i class="fa fa-thumbs-up"></i>
+									</div>
+									<div class="comment-content">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Velit omnis animi et iure laudantium vitae, praesentium
+										optio, sapiente distinctio illo?
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="comment-main-level">
+							<!-- Avatar -->
+							<div class="comment-avatar">
+								<img src="Author_img/4.jpg" alt="" />
+							</div>
+							<!-- Comment Container -->
+							<div class="comment-box">
+								<div class="comment-head">
+									<h6 class="comment-name"><a href="#">jane prog</a></h6>
+									<span>10 minutes</span>
+									<i class="fa fa-reply"></i>
+									<i class="fa fa-thumbs-up"></i>
+								</div>
+								<div class="comment-content">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Velit omnis animi et iure laudantium vitae, praesentium optio,
+									sapiente distinctio illo?
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Article Footer-->
+			<footer>
+				<a href="#">Follow</a>
+				<a href="#">Share</a>
+				<a href="#">Subscribe</a>
+			</footer>
+		</article>
+		<div class="container_similar_post">
+			<h2>Similar Post</h2>
+			<div class="containert">
+				<!--Single Post Begin-->
+				<div class="single_post">
+					<div class="content">
+						<!--Single Post Image-->
+						<div class="img_post">
+							<img
+								src="news_img/photo/cell.jpg"
+								alt="Post img_post"
+								loading="lazy"
+								decoding="async"
+							/>
+							<div class="gradient_cover_img"></div>
+						</div>
+						<!--Single Post Text-->
+						<div class="post_text">
+							<h4 class="title">
+								<a href="single.html"
+									>The Former foreign minister will spend around 12 years
+									in prison.</a
+								>
+							</h4>
+							<p>
+								A lot of text that we cant mesure A lot of text that we cant
+								mesure A lot of text that we cant mesure A lot of text that we
+								cant mesure A lot of text that we cant mesure A lot of text that
+								we cant mesure
+							</p>
+							<!--Single Post Button-->
+							<a href="single.html" class="readmore">Read more</a>
+						</div>
+					</div>
+				</div>
+				<!--Single Post End-->
+
+				<!--Single Post Begin-->
+				<div class="single_post">
+					<div class="content">
+						<!--Single Post Image-->
+						<div class="img_post">
+							<img
+								src="news_img/photo/explo.jpg"
+								alt="Post img_post"
+								loading="lazy"
+								decoding="async"
+							/>
+							<div class="gradient_cover_img"></div>
+						</div>
+						<!--Single Post Text-->
+						<div class="post_text">
+							<h4 class="title">
+								<a href="single.html">
+									There as an explosion in a European hospital because of an
+									oxygen cylinder</a
+								>
+							</h4>
+							<p>
+								A lot of text that we cant mesure A lot of text that we cant
+								mesure A lot of text that we cant mesure A lot of text that we
+								cant mesure A lot of text that we cant mesure A lot of text that
+								we cant mesure
+							</p>
+							<!--Single Post Button-->
+							<a href="single.html" class="readmore">Read more</a>
+						</div>
+					</div>
+				</div>
+				<!--Single Post End-->
+
+				<!--Single Post Begin-->
+				<div class="single_post">
+					<div class="content">
+						<!--Single Post Image-->
+						<div class="img_post">
+							<img
+								src="news_img/politic(6).jpg"
+								alt="Post img_post"
+								loading="lazy"
+								decoding="async"
+							/>
+							<div class="gradient_cover_img"></div>
+						</div>
+						<!--Single Post Text-->
+						<div class="post_text">
+							<h4 class="title">
+								<a href="single.html">
+									The general assembly voted on the fate of the president
+											of the world union</a
+								>
+							</h4>
+							<p>
+								A lot of text that we cant mesure A lot of text that we cant
+								mesure A lot of text that we cant mesure A lot of text that we
+								cant mesure A lot of text that we cant mesure A lot of text that
+								we cant mesure
+							</p>
+							<!--Single Post Button-->
+							<a href="single.html" class="readmore">Read more</a>
+						</div>
+					</div>
+				</div>
+				<!--Single Post End-->
+
+				<!--Single Post Begin-->
+				<div class="single_post">
+					<div class="content">
+						<!--Single Post Image-->
+						<div class="img_post">
+							<img
+								src="news_img/photo/death.jpg"
+								alt="Post img_post"
+								loading="lazy"
+								decoding="async"
+							/>
+							<div class="gradient_cover_img"></div>
+						</div>
+						<!--Single Post Text-->
+						<div class="post_text">
+							<h4 class="title">
+								<a href="single.html">
+									More than 13 dead were recorded during a demand of
+												Africans against the bad exploitation of the region</a
+								>
+							</h4>
+							<p>
+								A lot of text that we cant mesure A lot of text that we cant
+								mesure A lot of text that we cant mesure A lot of text that we
+								cant mesure A lot of text that we cant mesure A lot of text that
+								we cant mesure
+							</p>
+							<!--Single Post Button-->
+							<a href="single.html" class="readmore">Read more</a>
+						</div>
+					</div>
+				</div>
+				<!--Single Post End-->
+			</div>
+		</div>
+
+		<!--Footer Section-->
+		<footer>
+			<div class="footer">
+				<a href="facebook.com"><i class="fa fa-facebook-f"></i></a>
+				<a href="twitter.com"><i class="fab fa-twitter "></i></a>
+				<a href="google.com"><i class="fab fa-google-plus-g"></i></a>
+				<a href="gmail.com"><i class="fa fa-envelope"></i></a>
+				<a href="contact.html"><i class="fa fa-phone"></i></a>
+				<p>
+					© Wiguiblog 2021. All Rights Reserved || Designed By:
+					<a href="themeforest.net/desorgui">Wigui</a>
+				</p>
+			</div>
+		</footer>
+		<!--End Footer Section-->
+
+		<!-- :: Scripts -->
+		<script src="./assets/js/lib/jquery-3.3.1.min.js"></script>
+		<script src="./assets/js/lib/bootstrap.min.js"></script>
+		<script src="./assets/js/lib/typed.min.js"></script>
+		<script src="./assets/js/lib/fontAwesome.js"></script>
+		<script src="./assets/js/lib/typed.js"></script>
+		<script src="./assets/js/lib/swiper.min.js"></script>
+		<script src="./assets/js/lib/prism.js"></script>
+		<script src="./assets/js/theme/theme.js"></script>
+	</body>
+</html>
